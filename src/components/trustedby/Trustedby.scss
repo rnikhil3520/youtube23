@@ -1,0 +1,45 @@
+.trustedby{
+    height: 100px;
+    background-color: #fafafa;
+    display: flex;
+    justify-content: center;
+    
+    width: 100%;
+    overflow: hidden;
+    
+    .container{
+        display:flex;
+        align-items: center;
+        color: lightgray;
+        font-weight: 500;
+        gap: 60px;
+        
+     ul{
+        display:flex;
+        list-style: none;
+        margin: 0;
+        animation: scroll 20s infinite linear;
+        max-width: 70%;
+        font-size: 40px;
+        padding: 0;
+        li{
+            white-space: nowrap;
+            padding:10px 24px ;
+            
+        }
+        
+     }
+    }
+}
+
+@keyframes scroll {
+    0% {
+        transform: translateX(100%); /* Start from the right edge of the container */
+    }
+    100% {
+        transform: translateX(-100%); /* End at the left edge of the container */
+    }
+}
+
+
+
